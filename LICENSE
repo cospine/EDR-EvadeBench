@@ -3,16 +3,23 @@ EDR-EvadeBench — Licence
 
 Copyright (c) 2026 the EDR-EvadeBench authors. All rights reserved.
 
-The artifacts in this repository — the 22 evasion-technique sample
-implementations, the DET Matrix documentation, the evaluation-workflow
-documentation, and the accompanying README files — are made available
-for non-commercial scientific evaluation, consistent with the
-artifact-availability statement of the companion paper.
+This licence applies only to contributions for which the EDR-EvadeBench
+authors hold copyright, including original documentation, analysis code,
+and benchmark-specific additions, to the extent those additions may be
+licensed separately. Third-party code, tools, drivers, helper headers,
+and other third-party material are excluded and remain under their own
+terms; see THIRD_PARTY_NOTICES.md and the retained texts in LICENSES/.
+This licence does not restrict rights granted by upstream licences.
+
+The covered author contributions are made available for non-commercial
+scientific evaluation, consistent with the artifact-availability
+statement of the companion paper.
 
 1. Grant
 
-   Permission is granted to use, reproduce, and modify these artifacts
-   for non-commercial scientific research, academic teaching, and
+   Permission is granted to use, reproduce, and modify the covered
+   author contributions for non-commercial scientific research, academic
+   teaching, and
    defensive product evaluation, provided that this notice is retained
    in all copies or substantial portions of the material and that any
    publication of results derived from them cites the companion paper.

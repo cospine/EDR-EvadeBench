@@ -4,14 +4,14 @@
 
 **A Framework for Evaluating EDR Evasion Techniques and Defenses**
 
-EDR-EvadeBench is an open, systematic, and reproducible framework for evaluating how well Endpoint Detection & Response (EDR) and endpoint-security products resist evasion techniques. It couples a defense-oriented technique taxonomy (the **DET Matrix**) with a validated evasion sample library and a standardized four-stage evaluation workflow, so that different products can be compared under controlled, reproducible conditions.
+EDR-EvadeBench is a systematic and reproducible framework for evaluating how well Endpoint Detection & Response (EDR) and endpoint-security products resist evasion techniques. It couples a defense-oriented technique taxonomy (the **DET Matrix**) with a validated evasion sample library and a standardized four-stage evaluation workflow, so that different products can be compared under controlled, reproducible conditions.
 
-This repository provides the open-source artifacts of the framework:
+This repository provides the research materials for the framework:
 
-- **22 selected evasion implementations (research-oriented PoCs)**
+- **Materials for 22 selected evasion implementations (research-oriented PoCs)**
 - **The 3-Layer Defense Evasion Technique (DET) Matrix**
 - **A standardized four-stage evaluation workflow**
-- **Per-technique documentation, source code, and build files**
+- **Per-technique documentation, source/build files, scripts, and external-tool instructions as applicable**
 - **All 828 final case labels, readable case summaries, a common test protocol, and metric-recalculation tools**
 
 > ⚠️ **Read the [Ethical Considerations](#️-ethical-considerations) and [Disclaimer](#️-disclaimer) before using any sample in this repository.**
@@ -87,7 +87,7 @@ A defense-oriented taxonomy that organizes evasion techniques by the EDR functio
 
 ### 3. Public, Validated Sample Library
 
-- 22 single-technique samples, one standalone project per technique
+- One directory for each of the 22 selected implementations, with adapted source, scripts, or tool-specific preparation instructions as applicable
 - Three base payload families derived from **Cobalt Strike**, **Havoc**, and **AdaptixC2**, to reduce single-payload bias
 - All payloads protected with the same **AES-based encryption / runtime decryption** procedure
 - The paper reports that every sample passed both evasion-logic verification and payload-functionality checks before inclusion; the per-technique success criteria are stated in each technique README and in Table 7 of the paper
@@ -150,7 +150,7 @@ These results group into three defensive profiles: **early preventers** (Sophos,
 
 ## 📁 Repository Structure
 
-The repository is organized by technique ID. Each folder contains the source code, build/configuration files, and a dedicated README (compilation steps, execution commands, and expected behavior) for that technique.
+The repository is organized by technique ID. Each folder contains a dedicated README and the materials for that implementation: adapted source and build files, scripts, or tool-specific preparation instructions. External dependencies are listed in [BUILD.md](BUILD.md).
 
 ```text
 EDR-EvadeBench/
@@ -190,6 +190,7 @@ EDR-EvadeBench/
 ├── BUILD.md                  ← build matrix and source-specific commands
 ├── BINARY_PROVENANCE.md      ← hashes and provenance of bundled binaries
 ├── THIRD_PARTY_NOTICES.md    ← upstream projects and attribution
+├── LICENSES/                 ← retained third-party license texts
 ├── CHANGELOG.md
 ├── SECURITY.md
 ├── CONTRIBUTING.md
@@ -261,13 +262,16 @@ This benchmark adapts code from a number of upstream projects, listed with
 their paper references in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Those components remain under their own licences.
 
-The repository's own terms are in [LICENSE](LICENSE): the artifacts are made
-available for non-commercial scientific evaluation, consistent with the
-paper's artifact-availability statement. Third-party components are excluded
-from that grant.
+The authors' own contributions are available for non-commercial scientific
+evaluation under [LICENSE](LICENSE). Third-party components remain under their
+own terms, as listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); copies
+of the retained upstream licenses are in [LICENSES/](LICENSES/). The authors'
+license does not restrict rights granted by those upstream licenses.
 
-Bundled binary files — including the two kernel drivers and the two upstream
-tools — are documented in [BINARY_PROVENANCE.md](BINARY_PROVENANCE.md).
+Bundled binary files — including the two auxiliary kernel drivers, UPX, and
+zero-filled payload placeholders — are documented in
+[BINARY_PROVENANCE.md](BINARY_PROVENANCE.md). Resource Hacker is an external
+dependency obtained from its publisher; it is not bundled.
 
 ## 🔄 Versioning and Maintenance
 
