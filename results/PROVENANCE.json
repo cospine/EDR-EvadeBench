@@ -1,0 +1,15 @@
+{
+  "updated": "2026-11-10",
+  "source": "Companion manuscript, final case-result table",
+  "source_result_table": "tab/evasion_results_table.tex",
+  "source_result_table_sha256": "b0ab042d3a1f07fc6a30c50fb1e2a47d316470a9d4e5a877ea38471ab259e782",
+  "dataset": "outcomes_scored.csv",
+  "dataset_sha256": "251804b59fdeca4f959b37e2145a2bb905d30573a8a3aea89a0978da86f19e9a",
+  "cases": 828,
+  "non_baseline_cases": 792,
+  "baseline_cases": 36,
+  "historical_screenshots_public": false,
+  "historical_full_logs_public": false,
+  "notes": "All 828 labels were matched individually to the manuscript-derived dataset. Readable results, case summaries and metrics are derived from the canonical CSV. Internal workbook location fields are omitted.",
+  "release_version": "2026-11-10"
+}

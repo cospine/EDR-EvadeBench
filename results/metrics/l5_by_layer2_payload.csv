@@ -1,0 +1,19 @@
+layer2,payload_family,n,L5_count,L5
+EDR Sensor Disruption,CobaltStrike,60,2,0.033333
+EDR Sensor Disruption,Havoc,60,22,0.366667
+EDR Sensor Disruption,AdaptixC2,60,15,0.25
+EDR Agent Disruption,CobaltStrike,36,12,0.333333
+EDR Agent Disruption,Havoc,36,12,0.333333
+EDR Agent Disruption,AdaptixC2,36,12,0.333333
+Telemetry Blocking,CobaltStrike,12,4,0.333333
+Telemetry Blocking,Havoc,12,4,0.333333
+Telemetry Blocking,AdaptixC2,12,4,0.333333
+Memory Concealment,CobaltStrike,84,5,0.059524
+Memory Concealment,Havoc,84,24,0.285714
+Memory Concealment,AdaptixC2,84,24,0.285714
+Obfuscation,CobaltStrike,48,0,0.0
+Obfuscation,Havoc,48,14,0.291667
+Obfuscation,AdaptixC2,48,10,0.208333
+Logic Bypass,CobaltStrike,24,0,0.0
+Logic Bypass,Havoc,24,10,0.416667
+Logic Bypass,AdaptixC2,24,8,0.333333

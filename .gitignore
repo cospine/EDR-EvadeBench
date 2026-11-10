@@ -1,0 +1,53 @@
+# Build outputs
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.idb
+*.log
+
+# Executables produced by building the samples.
+# The bundled UPX upstream tool is explicitly re-included below.
+*.exe
+*.dll
+!T17_Code Packing/upx.exe
+
+# Generated sample artifacts
+T12_COM-based Process Injection/com_inject/Shellcode/notepad.bin
+T1_Direct Syscall Invocation/syscalls_mem.c
+T1_Direct Syscall Invocation/syscalls_mem.h
+T1_Direct Syscall Invocation/syscalls_mem*.asm
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+x64/
+Win32/
+Debug/
+Release/
+[Tt]emp/
+
+# NuGet / vcpkg restore output for T14 (Boost)
+packages/
+vcpkg_installed/
+
+# LLVM build tree for T19
+build_vs2022/
+llvm-project/
+
+# Framework output that is specific to one evaluator's run.
+# The *.template.csv files, results/outcomes_scored.csv (the released
+# case-level outcome matrix), the reconstructed results/*.csv and
+# results/metrics/ ARE committed; these are the files you fill in yourself.
+results/validation.csv
+results/evidence.csv
+results/*.local.csv
+results/metrics/local/
+results/figures/generated/local/
+
+# Python
+__pycache__/
+*.pyc

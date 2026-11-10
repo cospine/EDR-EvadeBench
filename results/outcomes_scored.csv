@@ -1,0 +1,829 @@
+case_id,technique_id,technique_name,layer1,layer2,payload_family,product,environment,is_baseline,level,level_name
+T0-CS-SOPH-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Sophos,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-CS-KASP-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Kaspersky,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-CS-BITD-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Bitdefender,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-CS-MDAV-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,DefenderAV,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-CS-ELAS-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Elastic,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-CS-HUOR-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Huorong,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-SOPH-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Sophos,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-KASP-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Kaspersky,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-BITD-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Bitdefender,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-MDAV-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,DefenderAV,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-ELAS-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Elastic,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-HV-HUOR-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Huorong,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-SOPH-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Sophos,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-KASP-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Kaspersky,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-BITD-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Bitdefender,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-MDAV-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,DefenderAV,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-ELAS-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Elastic,Win11Enterprise,True,L1,Pre-execution Prevention
+T0-AX-HUOR-W11,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Huorong,Win11Enterprise,True,L1,Pre-execution Prevention
+T7-CS-SOPH-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L3,Pre-command Prevention
+T7-CS-KASP-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T7-CS-BITD-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L3,Pre-command Prevention
+T7-CS-MDAV-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T7-CS-ELAS-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L5,Operational Success
+T7-CS-HUOR-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L5,Operational Success
+T7-HV-SOPH-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Sophos,Win11Enterprise,False,L3,Pre-command Prevention
+T7-HV-KASP-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T7-HV-BITD-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Bitdefender,Win11Enterprise,False,L3,Pre-command Prevention
+T7-HV-MDAV-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T7-HV-ELAS-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Elastic,Win11Enterprise,False,L5,Operational Success
+T7-HV-HUOR-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T7-AX-SOPH-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L3,Pre-command Prevention
+T7-AX-KASP-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T7-AX-BITD-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L3,Pre-command Prevention
+T7-AX-MDAV-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T7-AX-ELAS-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L5,Operational Success
+T7-AX-HUOR-W11,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T8-CS-SOPH-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-CS-KASP-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T8-CS-BITD-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-CS-MDAV-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T8-CS-ELAS-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-CS-HUOR-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-HV-SOPH-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-HV-KASP-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T8-HV-BITD-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-HV-MDAV-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T8-HV-ELAS-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-HV-HUOR-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-AX-SOPH-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-AX-KASP-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T8-AX-BITD-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-AX-MDAV-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T8-AX-ELAS-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T8-AX-HUOR-W11,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-CS-SOPH-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-CS-KASP-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-CS-BITD-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-CS-MDAV-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T6-CS-ELAS-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-CS-HUOR-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-HV-SOPH-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-HV-KASP-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-HV-BITD-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-HV-MDAV-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T6-HV-ELAS-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-HV-HUOR-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-AX-SOPH-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-AX-KASP-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-AX-BITD-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T6-AX-MDAV-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T6-AX-ELAS-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T6-AX-HUOR-W11,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T12-CS-SOPH-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-CS-KASP-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-CS-BITD-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-CS-MDAV-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T12-CS-ELAS-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T12-CS-HUOR-W11,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L5,Operational Success
+T12-HV-SOPH-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-HV-KASP-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-HV-BITD-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-HV-MDAV-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T12-HV-ELAS-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T12-HV-HUOR-W11,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T12-AX-SOPH-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-AX-KASP-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-AX-BITD-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T12-AX-MDAV-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T12-AX-ELAS-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T12-AX-HUOR-W11,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T19-CS-SOPH-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-CS-KASP-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-CS-BITD-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-CS-MDAV-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-CS-ELAS-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-CS-HUOR-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T19-HV-SOPH-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-HV-KASP-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T19-HV-BITD-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-HV-MDAV-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-HV-ELAS-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-HV-HUOR-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T19-AX-SOPH-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-AX-KASP-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T19-AX-BITD-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T19-AX-MDAV-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-AX-ELAS-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T19-AX-HUOR-W11,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T9-CS-SOPH-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-CS-KASP-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T9-CS-BITD-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-CS-MDAV-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,DefenderAV,Win11Enterprise,False,L4,Command-stage Prevention
+T9-CS-ELAS-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Elastic,Win11Enterprise,False,L5,Operational Success
+T9-CS-HUOR-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Huorong,Win11Enterprise,False,L5,Operational Success
+T9-HV-SOPH-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-HV-KASP-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T9-HV-BITD-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-HV-MDAV-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,DefenderAV,Win11Enterprise,False,L4,Command-stage Prevention
+T9-HV-ELAS-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Elastic,Win11Enterprise,False,L5,Operational Success
+T9-HV-HUOR-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T9-AX-SOPH-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-AX-KASP-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T9-AX-BITD-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T9-AX-MDAV-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,DefenderAV,Win11Enterprise,False,L4,Command-stage Prevention
+T9-AX-ELAS-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Elastic,Win11Enterprise,False,L5,Operational Success
+T9-AX-HUOR-W11,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T1-CS-SOPH-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-CS-KASP-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-CS-BITD-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-CS-MDAV-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T1-CS-ELAS-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T1-CS-HUOR-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T1-HV-SOPH-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-HV-KASP-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T1-HV-BITD-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-HV-MDAV-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T1-HV-ELAS-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T1-HV-HUOR-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T1-AX-SOPH-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-AX-KASP-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T1-AX-BITD-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T1-AX-MDAV-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T1-AX-ELAS-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T1-AX-HUOR-W11,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T13-CS-SOPH-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-CS-KASP-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T13-CS-BITD-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-CS-MDAV-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T13-CS-ELAS-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T13-CS-HUOR-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T13-HV-SOPH-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-HV-KASP-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T13-HV-BITD-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-HV-MDAV-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T13-HV-ELAS-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T13-HV-HUOR-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T13-AX-SOPH-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-AX-KASP-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T13-AX-BITD-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L1,Pre-execution Prevention
+T13-AX-MDAV-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T13-AX-ELAS-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T13-AX-HUOR-W11,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T14-CS-SOPH-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-CS-KASP-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-CS-BITD-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T14-CS-MDAV-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-CS-ELAS-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-CS-HUOR-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-HV-SOPH-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-HV-KASP-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-HV-BITD-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T14-HV-MDAV-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-HV-ELAS-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-HV-HUOR-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-AX-SOPH-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-AX-KASP-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-AX-BITD-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T14-AX-MDAV-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-AX-ELAS-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T14-AX-HUOR-W11,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-CS-SOPH-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-CS-KASP-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-CS-BITD-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-CS-MDAV-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T15-CS-ELAS-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-CS-HUOR-W11,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-HV-SOPH-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-HV-KASP-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-HV-BITD-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-HV-MDAV-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T15-HV-ELAS-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-HV-HUOR-W11,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-AX-SOPH-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-AX-KASP-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-AX-BITD-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T15-AX-MDAV-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T15-AX-ELAS-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T15-AX-HUOR-W11,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-CS-SOPH-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-CS-KASP-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-CS-BITD-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-CS-MDAV-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T5-CS-ELAS-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T5-CS-HUOR-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T5-HV-SOPH-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-HV-KASP-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T5-HV-BITD-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-HV-MDAV-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T5-HV-ELAS-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T5-HV-HUOR-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T5-AX-SOPH-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-AX-KASP-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T5-AX-BITD-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T5-AX-MDAV-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T5-AX-ELAS-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T5-AX-HUOR-W11,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L1,Pre-execution Prevention
+T2-CS-SOPH-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-CS-KASP-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-CS-BITD-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-CS-MDAV-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T2-CS-ELAS-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T2-CS-HUOR-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T2-HV-SOPH-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-HV-KASP-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T2-HV-BITD-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-HV-MDAV-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T2-HV-ELAS-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T2-HV-HUOR-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T2-AX-SOPH-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-AX-KASP-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T2-AX-BITD-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T2-AX-MDAV-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T2-AX-ELAS-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T2-AX-HUOR-W11,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T3-CS-SOPH-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-CS-KASP-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-CS-BITD-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-CS-MDAV-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T3-CS-ELAS-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T3-CS-HUOR-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L4,Command-stage Prevention
+T3-HV-SOPH-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-HV-KASP-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Win11Enterprise,False,L4,Command-stage Prevention
+T3-HV-BITD-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-HV-MDAV-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T3-HV-ELAS-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T3-HV-HUOR-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T3-AX-SOPH-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-AX-KASP-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T3-AX-BITD-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T3-AX-MDAV-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T3-AX-ELAS-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T3-AX-HUOR-W11,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T17-CS-SOPH-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-CS-KASP-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-CS-BITD-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-CS-MDAV-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-CS-ELAS-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-CS-HUOR-W11,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T17-HV-SOPH-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-HV-KASP-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-HV-BITD-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-HV-MDAV-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-HV-ELAS-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-HV-HUOR-W11,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T17-AX-SOPH-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-AX-KASP-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-AX-BITD-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T17-AX-MDAV-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-AX-ELAS-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T17-AX-HUOR-W11,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T18-CS-SOPH-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-CS-KASP-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T18-CS-BITD-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T18-CS-MDAV-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-CS-ELAS-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-CS-HUOR-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T18-HV-SOPH-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-HV-KASP-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-HV-BITD-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T18-HV-MDAV-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-HV-ELAS-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-HV-HUOR-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T18-AX-SOPH-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Sophos,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-AX-KASP-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-AX-BITD-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T18-AX-MDAV-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,DefenderAV,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-AX-ELAS-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T18-AX-HUOR-W11,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T21-CS-SOPH-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-CS-KASP-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-CS-BITD-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-CS-MDAV-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T21-CS-ELAS-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-CS-HUOR-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-HV-SOPH-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-HV-KASP-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T21-HV-BITD-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-HV-MDAV-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T21-HV-ELAS-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-HV-HUOR-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T21-AX-SOPH-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-AX-KASP-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T21-AX-BITD-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-AX-MDAV-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T21-AX-ELAS-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T21-AX-HUOR-W11,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T10-CS-SOPH-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-CS-KASP-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-CS-BITD-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-CS-MDAV-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T10-CS-ELAS-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-CS-HUOR-W11,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T10-HV-SOPH-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-HV-KASP-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T10-HV-BITD-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-HV-MDAV-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T10-HV-ELAS-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-HV-HUOR-W11,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T10-AX-SOPH-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-AX-KASP-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T10-AX-BITD-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-AX-MDAV-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T10-AX-ELAS-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L2,Pre-C2 Prevention
+T10-AX-HUOR-W11,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T11-CS-SOPH-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-CS-KASP-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-CS-BITD-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-CS-MDAV-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T11-CS-ELAS-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L3,Pre-command Prevention
+T11-CS-HUOR-W11,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-HV-SOPH-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-HV-KASP-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T11-HV-BITD-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-HV-MDAV-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T11-HV-ELAS-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T11-HV-HUOR-W11,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T11-AX-SOPH-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-AX-KASP-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T11-AX-BITD-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T11-AX-MDAV-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T11-AX-ELAS-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T11-AX-HUOR-W11,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T22-CS-SOPH-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-CS-KASP-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-CS-BITD-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-CS-MDAV-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T22-CS-ELAS-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-CS-HUOR-W11,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Huorong,Win11Enterprise,False,L3,Pre-command Prevention
+T22-HV-SOPH-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-HV-KASP-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-HV-BITD-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-HV-MDAV-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T22-HV-ELAS-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-HV-HUOR-W11,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T22-AX-SOPH-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-AX-KASP-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Kaspersky,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-AX-BITD-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T22-AX-MDAV-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T22-AX-ELAS-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T22-AX-HUOR-W11,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T4-CS-SOPH-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-CS-KASP-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-CS-BITD-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-CS-MDAV-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-CS-ELAS-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T4-CS-HUOR-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Win11Enterprise,False,L5,Operational Success
+T4-HV-SOPH-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-HV-KASP-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Win11Enterprise,False,L4,Command-stage Prevention
+T4-HV-BITD-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-HV-MDAV-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T4-HV-ELAS-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T4-HV-HUOR-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T4-AX-SOPH-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-AX-KASP-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-AX-BITD-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-AX-MDAV-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Win11Enterprise,False,L2,Pre-C2 Prevention
+T4-AX-ELAS-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T4-AX-HUOR-W11,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T20-CS-SOPH-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-CS-KASP-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-CS-BITD-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-CS-MDAV-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,DefenderAV,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-CS-ELAS-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T20-CS-HUOR-W11,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Huorong,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-HV-SOPH-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-HV-KASP-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Kaspersky,Win11Enterprise,False,L5,Operational Success
+T20-HV-BITD-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-HV-MDAV-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T20-HV-ELAS-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T20-HV-HUOR-W11,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T20-AX-SOPH-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-AX-KASP-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Kaspersky,Win11Enterprise,False,L3,Pre-command Prevention
+T20-AX-BITD-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T20-AX-MDAV-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T20-AX-ELAS-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T20-AX-HUOR-W11,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T16-CS-SOPH-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-CS-KASP-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-CS-BITD-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-CS-MDAV-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,DefenderAV,Win11Enterprise,False,L3,Pre-command Prevention
+T16-CS-ELAS-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T16-CS-HUOR-W11,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Huorong,Win11Enterprise,False,L4,Command-stage Prevention
+T16-HV-SOPH-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-HV-KASP-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-HV-BITD-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-HV-MDAV-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T16-HV-ELAS-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T16-HV-HUOR-W11,T16,Module Stomping,Detection,Memory Concealment,Havoc,Huorong,Win11Enterprise,False,L5,Operational Success
+T16-AX-SOPH-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Sophos,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-AX-KASP-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Kaspersky,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-AX-BITD-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Bitdefender,Win11Enterprise,False,L2,Pre-C2 Prevention
+T16-AX-MDAV-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,DefenderAV,Win11Enterprise,False,L5,Operational Success
+T16-AX-ELAS-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Elastic,Win11Enterprise,False,L1,Pre-execution Prevention
+T16-AX-HUOR-W11,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Huorong,Win11Enterprise,False,L5,Operational Success
+T0-CS-SOPH-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Sophos,Server2025,True,L1,Pre-execution Prevention
+T0-CS-KASP-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Kaspersky,Server2025,True,L1,Pre-execution Prevention
+T0-CS-BITD-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Bitdefender,Server2025,True,L1,Pre-execution Prevention
+T0-CS-MDAV-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,DefenderAV,Server2025,True,L1,Pre-execution Prevention
+T0-CS-ELAS-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Elastic,Server2025,True,L1,Pre-execution Prevention
+T0-CS-HUOR-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,CobaltStrike,Huorong,Server2025,True,L1,Pre-execution Prevention
+T0-HV-SOPH-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Sophos,Server2025,True,L1,Pre-execution Prevention
+T0-HV-KASP-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Kaspersky,Server2025,True,L1,Pre-execution Prevention
+T0-HV-BITD-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Bitdefender,Server2025,True,L1,Pre-execution Prevention
+T0-HV-MDAV-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,DefenderAV,Server2025,True,L1,Pre-execution Prevention
+T0-HV-ELAS-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Elastic,Server2025,True,L1,Pre-execution Prevention
+T0-HV-HUOR-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,Havoc,Huorong,Server2025,True,L1,Pre-execution Prevention
+T0-AX-SOPH-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Sophos,Server2025,True,L1,Pre-execution Prevention
+T0-AX-KASP-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Kaspersky,Server2025,True,L1,Pre-execution Prevention
+T0-AX-BITD-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Bitdefender,Server2025,True,L1,Pre-execution Prevention
+T0-AX-MDAV-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,DefenderAV,Server2025,True,L1,Pre-execution Prevention
+T0-AX-ELAS-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Elastic,Server2025,True,L1,Pre-execution Prevention
+T0-AX-HUOR-S25,T0,AES-protected Baseline Payload (no additional evasion logic),,,AdaptixC2,Huorong,Server2025,True,L1,Pre-execution Prevention
+T7-CS-SOPH-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Server2025,False,L3,Pre-command Prevention
+T7-CS-KASP-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Server2025,False,L5,Operational Success
+T7-CS-BITD-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Server2025,False,L3,Pre-command Prevention
+T7-CS-MDAV-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Server2025,False,L5,Operational Success
+T7-CS-ELAS-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Server2025,False,L5,Operational Success
+T7-CS-HUOR-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Server2025,False,L5,Operational Success
+T7-HV-SOPH-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Sophos,Server2025,False,L3,Pre-command Prevention
+T7-HV-KASP-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T7-HV-BITD-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Bitdefender,Server2025,False,L3,Pre-command Prevention
+T7-HV-MDAV-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T7-HV-ELAS-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Elastic,Server2025,False,L5,Operational Success
+T7-HV-HUOR-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,Havoc,Huorong,Server2025,False,L5,Operational Success
+T7-AX-SOPH-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Server2025,False,L3,Pre-command Prevention
+T7-AX-KASP-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Server2025,False,L5,Operational Success
+T7-AX-BITD-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Server2025,False,L3,Pre-command Prevention
+T7-AX-MDAV-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T7-AX-ELAS-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Server2025,False,L5,Operational Success
+T7-AX-HUOR-S25,T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T8-CS-SOPH-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Server2025,False,L1,Pre-execution Prevention
+T8-CS-KASP-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T8-CS-BITD-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T8-CS-MDAV-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Server2025,False,L5,Operational Success
+T8-CS-ELAS-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T8-CS-HUOR-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Server2025,False,L1,Pre-execution Prevention
+T8-HV-SOPH-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Sophos,Server2025,False,L1,Pre-execution Prevention
+T8-HV-KASP-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T8-HV-BITD-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T8-HV-MDAV-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T8-HV-ELAS-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T8-HV-HUOR-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,Havoc,Huorong,Server2025,False,L1,Pre-execution Prevention
+T8-AX-SOPH-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Server2025,False,L1,Pre-execution Prevention
+T8-AX-KASP-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T8-AX-BITD-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T8-AX-MDAV-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T8-AX-ELAS-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T8-AX-HUOR-S25,T8,EDR Process Termination,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Server2025,False,L1,Pre-execution Prevention
+T6-CS-SOPH-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T6-CS-KASP-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T6-CS-BITD-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T6-CS-MDAV-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,DefenderAV,Server2025,False,L5,Operational Success
+T6-CS-ELAS-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T6-CS-HUOR-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,CobaltStrike,Huorong,Server2025,False,L1,Pre-execution Prevention
+T6-HV-SOPH-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T6-HV-KASP-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T6-HV-BITD-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T6-HV-MDAV-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T6-HV-ELAS-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T6-HV-HUOR-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,Havoc,Huorong,Server2025,False,L1,Pre-execution Prevention
+T6-AX-SOPH-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T6-AX-KASP-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T6-AX-BITD-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T6-AX-MDAV-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T6-AX-ELAS-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T6-AX-HUOR-S25,T6,Kernel Callback Removal,Collection,EDR Agent Disruption,AdaptixC2,Huorong,Server2025,False,L1,Pre-execution Prevention
+T12-CS-SOPH-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T12-CS-KASP-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T12-CS-BITD-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T12-CS-MDAV-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T12-CS-ELAS-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T12-CS-HUOR-S25,T12,COM-based Process Injection,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L5,Operational Success
+T12-HV-SOPH-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T12-HV-KASP-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T12-HV-BITD-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T12-HV-MDAV-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T12-HV-ELAS-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L3,Pre-command Prevention
+T12-HV-HUOR-S25,T12,COM-based Process Injection,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L5,Operational Success
+T12-AX-SOPH-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T12-AX-KASP-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T12-AX-BITD-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T12-AX-MDAV-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T12-AX-ELAS-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L3,Pre-command Prevention
+T12-AX-HUOR-S25,T12,COM-based Process Injection,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T19-CS-SOPH-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T19-CS-KASP-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T19-CS-BITD-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T19-CS-MDAV-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T19-CS-ELAS-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T19-CS-HUOR-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T19-HV-SOPH-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T19-HV-KASP-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T19-HV-BITD-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T19-HV-MDAV-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T19-HV-ELAS-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T19-HV-HUOR-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,Havoc,Huorong,Server2025,False,L5,Operational Success
+T19-AX-SOPH-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T19-AX-KASP-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T19-AX-BITD-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T19-AX-MDAV-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T19-AX-ELAS-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T19-AX-HUOR-S25,T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T9-CS-SOPH-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T9-CS-KASP-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T9-CS-BITD-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T9-CS-MDAV-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,DefenderAV,Server2025,False,L4,Command-stage Prevention
+T9-CS-ELAS-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Elastic,Server2025,False,L5,Operational Success
+T9-CS-HUOR-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,CobaltStrike,Huorong,Server2025,False,L5,Operational Success
+T9-HV-SOPH-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T9-HV-KASP-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T9-HV-BITD-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T9-HV-MDAV-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,DefenderAV,Server2025,False,L4,Command-stage Prevention
+T9-HV-ELAS-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Elastic,Server2025,False,L5,Operational Success
+T9-HV-HUOR-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,Havoc,Huorong,Server2025,False,L5,Operational Success
+T9-AX-SOPH-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T9-AX-KASP-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T9-AX-BITD-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T9-AX-MDAV-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,DefenderAV,Server2025,False,L4,Command-stage Prevention
+T9-AX-ELAS-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Elastic,Server2025,False,L5,Operational Success
+T9-AX-HUOR-S25,T9,EDRSilencer,Transmission,Telemetry Blocking,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T1-CS-SOPH-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T1-CS-KASP-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T1-CS-BITD-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T1-CS-MDAV-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T1-CS-ELAS-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T1-CS-HUOR-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T1-HV-SOPH-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T1-HV-KASP-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T1-HV-BITD-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T1-HV-MDAV-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T1-HV-ELAS-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T1-HV-HUOR-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,Havoc,Huorong,Server2025,False,L5,Operational Success
+T1-AX-SOPH-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T1-AX-KASP-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T1-AX-BITD-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T1-AX-MDAV-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T1-AX-ELAS-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T1-AX-HUOR-S25,T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T13-CS-SOPH-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L1,Pre-execution Prevention
+T13-CS-KASP-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T13-CS-BITD-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T13-CS-MDAV-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T13-CS-ELAS-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L3,Pre-command Prevention
+T13-CS-HUOR-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T13-HV-SOPH-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L1,Pre-execution Prevention
+T13-HV-KASP-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T13-HV-BITD-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T13-HV-MDAV-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T13-HV-ELAS-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L3,Pre-command Prevention
+T13-HV-HUOR-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L5,Operational Success
+T13-AX-SOPH-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L1,Pre-execution Prevention
+T13-AX-KASP-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T13-AX-BITD-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L1,Pre-execution Prevention
+T13-AX-MDAV-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T13-AX-ELAS-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L3,Pre-command Prevention
+T13-AX-HUOR-S25,T13,Fiber-based Process Injection,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T14-CS-SOPH-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L1,Pre-execution Prevention
+T14-CS-KASP-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T14-CS-BITD-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T14-CS-MDAV-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T14-CS-ELAS-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T14-CS-HUOR-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L1,Pre-execution Prevention
+T14-HV-SOPH-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L1,Pre-execution Prevention
+T14-HV-KASP-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T14-HV-BITD-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T14-HV-MDAV-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T14-HV-ELAS-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T14-HV-HUOR-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L1,Pre-execution Prevention
+T14-AX-SOPH-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L1,Pre-execution Prevention
+T14-AX-KASP-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T14-AX-BITD-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T14-AX-MDAV-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T14-AX-ELAS-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T14-AX-HUOR-S25,T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L1,Pre-execution Prevention
+T15-CS-SOPH-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T15-CS-KASP-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T15-CS-BITD-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T15-CS-MDAV-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L5,Operational Success
+T15-CS-ELAS-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T15-CS-HUOR-S25,T15,Process Hollowing,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T15-HV-SOPH-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T15-HV-KASP-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T15-HV-BITD-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T15-HV-MDAV-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T15-HV-ELAS-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T15-HV-HUOR-S25,T15,Process Hollowing,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T15-AX-SOPH-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T15-AX-KASP-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T15-AX-BITD-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T15-AX-MDAV-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T15-AX-ELAS-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T15-AX-HUOR-S25,T15,Process Hollowing,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T5-CS-SOPH-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T5-CS-KASP-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T5-CS-BITD-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T5-CS-MDAV-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T5-CS-ELAS-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T5-CS-HUOR-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Server2025,False,L1,Pre-execution Prevention
+T5-HV-SOPH-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T5-HV-KASP-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T5-HV-BITD-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T5-HV-MDAV-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T5-HV-ELAS-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T5-HV-HUOR-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,Havoc,Huorong,Server2025,False,L1,Pre-execution Prevention
+T5-AX-SOPH-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T5-AX-KASP-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T5-AX-BITD-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T5-AX-MDAV-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T5-AX-ELAS-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T5-AX-HUOR-S25,T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Server2025,False,L1,Pre-execution Prevention
+T2-CS-SOPH-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T2-CS-KASP-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T2-CS-BITD-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T2-CS-MDAV-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T2-CS-ELAS-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T2-CS-HUOR-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T2-HV-SOPH-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T2-HV-KASP-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T2-HV-BITD-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T2-HV-MDAV-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T2-HV-ELAS-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T2-HV-HUOR-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,Havoc,Huorong,Server2025,False,L5,Operational Success
+T2-AX-SOPH-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T2-AX-KASP-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T2-AX-BITD-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T2-AX-MDAV-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T2-AX-ELAS-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T2-AX-HUOR-S25,T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T3-CS-SOPH-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T3-CS-KASP-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T3-CS-BITD-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T3-CS-MDAV-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T3-CS-ELAS-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T3-CS-HUOR-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Server2025,False,L4,Command-stage Prevention
+T3-HV-SOPH-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T3-HV-KASP-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Server2025,False,L4,Command-stage Prevention
+T3-HV-BITD-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T3-HV-MDAV-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Server2025,False,L4,Command-stage Prevention
+T3-HV-ELAS-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T3-HV-HUOR-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,Havoc,Huorong,Server2025,False,L5,Operational Success
+T3-AX-SOPH-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T3-AX-KASP-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T3-AX-BITD-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T3-AX-MDAV-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T3-AX-ELAS-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T3-AX-HUOR-S25,T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T17-CS-SOPH-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T17-CS-KASP-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T17-CS-BITD-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T17-CS-MDAV-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T17-CS-ELAS-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T17-CS-HUOR-S25,T17,Code Packing (UPX),Detection,Obfuscation,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T17-HV-SOPH-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T17-HV-KASP-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T17-HV-BITD-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T17-HV-MDAV-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T17-HV-ELAS-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T17-HV-HUOR-S25,T17,Code Packing (UPX),Detection,Obfuscation,Havoc,Huorong,Server2025,False,L5,Operational Success
+T17-AX-SOPH-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T17-AX-KASP-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T17-AX-BITD-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T17-AX-MDAV-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T17-AX-ELAS-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T17-AX-HUOR-S25,T17,Code Packing (UPX),Detection,Obfuscation,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T18-CS-SOPH-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Sophos,Server2025,False,L1,Pre-execution Prevention
+T18-CS-KASP-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T18-CS-BITD-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T18-CS-MDAV-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,DefenderAV,Server2025,False,L1,Pre-execution Prevention
+T18-CS-ELAS-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T18-CS-HUOR-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T18-HV-SOPH-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Sophos,Server2025,False,L1,Pre-execution Prevention
+T18-HV-KASP-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T18-HV-BITD-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T18-HV-MDAV-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,DefenderAV,Server2025,False,L2,Pre-C2 Prevention
+T18-HV-ELAS-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T18-HV-HUOR-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,Havoc,Huorong,Server2025,False,L5,Operational Success
+T18-AX-SOPH-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Sophos,Server2025,False,L1,Pre-execution Prevention
+T18-AX-KASP-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T18-AX-BITD-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T18-AX-MDAV-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,DefenderAV,Server2025,False,L2,Pre-C2 Prevention
+T18-AX-ELAS-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T18-AX-HUOR-S25,T18,Code Virtualization (VMProtect),Detection,Obfuscation,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T21-CS-SOPH-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T21-CS-KASP-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T21-CS-BITD-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T21-CS-MDAV-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T21-CS-ELAS-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T21-CS-HUOR-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,CobaltStrike,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T21-HV-SOPH-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T21-HV-KASP-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T21-HV-BITD-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T21-HV-MDAV-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T21-HV-ELAS-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T21-HV-HUOR-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,Havoc,Huorong,Server2025,False,L5,Operational Success
+T21-AX-SOPH-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T21-AX-KASP-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T21-AX-BITD-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T21-AX-MDAV-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T21-AX-ELAS-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T21-AX-HUOR-S25,T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T10-CS-SOPH-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T10-CS-KASP-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T10-CS-BITD-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T10-CS-MDAV-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T10-CS-ELAS-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T10-CS-HUOR-S25,T10,COM Hijacking,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T10-HV-SOPH-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T10-HV-KASP-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T10-HV-BITD-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T10-HV-MDAV-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T10-HV-ELAS-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T10-HV-HUOR-S25,T10,COM Hijacking,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L5,Operational Success
+T10-AX-SOPH-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T10-AX-KASP-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T10-AX-BITD-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T10-AX-MDAV-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T10-AX-ELAS-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L2,Pre-C2 Prevention
+T10-AX-HUOR-S25,T10,COM Hijacking,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T11-CS-SOPH-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T11-CS-KASP-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T11-CS-BITD-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T11-CS-MDAV-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T11-CS-ELAS-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L3,Pre-command Prevention
+T11-CS-HUOR-S25,T11,DLL Hijacking,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T11-HV-SOPH-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T11-HV-KASP-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T11-HV-BITD-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T11-HV-MDAV-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T11-HV-ELAS-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T11-HV-HUOR-S25,T11,DLL Hijacking,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L5,Operational Success
+T11-AX-SOPH-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T11-AX-KASP-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L5,Operational Success
+T11-AX-BITD-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T11-AX-MDAV-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T11-AX-ELAS-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T11-AX-HUOR-S25,T11,DLL Hijacking,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T22-CS-SOPH-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T22-CS-KASP-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T22-CS-BITD-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T22-CS-MDAV-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T22-CS-ELAS-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T22-CS-HUOR-S25,T22,COM-based Process Creation,Detection,Logic Bypass,CobaltStrike,Huorong,Server2025,False,L3,Pre-command Prevention
+T22-HV-SOPH-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T22-HV-KASP-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T22-HV-BITD-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T22-HV-MDAV-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T22-HV-ELAS-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T22-HV-HUOR-S25,T22,COM-based Process Creation,Detection,Logic Bypass,Havoc,Huorong,Server2025,False,L5,Operational Success
+T22-AX-SOPH-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T22-AX-KASP-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Kaspersky,Server2025,False,L1,Pre-execution Prevention
+T22-AX-BITD-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T22-AX-MDAV-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T22-AX-ELAS-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T22-AX-HUOR-S25,T22,COM-based Process Creation,Detection,Logic Bypass,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T4-CS-SOPH-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T4-CS-KASP-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T4-CS-BITD-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T4-CS-MDAV-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,DefenderAV,Server2025,False,L2,Pre-C2 Prevention
+T4-CS-ELAS-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T4-CS-HUOR-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,CobaltStrike,Huorong,Server2025,False,L5,Operational Success
+T4-HV-SOPH-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T4-HV-KASP-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Kaspersky,Server2025,False,L4,Command-stage Prevention
+T4-HV-BITD-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T4-HV-MDAV-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T4-HV-ELAS-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T4-HV-HUOR-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,Havoc,Huorong,Server2025,False,L5,Operational Success
+T4-AX-SOPH-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T4-AX-KASP-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T4-AX-BITD-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T4-AX-MDAV-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T4-AX-ELAS-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T4-AX-HUOR-S25,T4,Hook Overwriting,Collection,EDR Sensor Disruption,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T20-CS-SOPH-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T20-CS-KASP-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T20-CS-BITD-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T20-CS-MDAV-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,DefenderAV,Server2025,False,L2,Pre-C2 Prevention
+T20-CS-ELAS-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T20-CS-HUOR-S25,T20,PE Resource Masquerading,Detection,Obfuscation,CobaltStrike,Huorong,Server2025,False,L2,Pre-C2 Prevention
+T20-HV-SOPH-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T20-HV-KASP-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Kaspersky,Server2025,False,L5,Operational Success
+T20-HV-BITD-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T20-HV-MDAV-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T20-HV-ELAS-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T20-HV-HUOR-S25,T20,PE Resource Masquerading,Detection,Obfuscation,Havoc,Huorong,Server2025,False,L5,Operational Success
+T20-AX-SOPH-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T20-AX-KASP-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Kaspersky,Server2025,False,L3,Pre-command Prevention
+T20-AX-BITD-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T20-AX-MDAV-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T20-AX-ELAS-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T20-AX-HUOR-S25,T20,PE Resource Masquerading,Detection,Obfuscation,AdaptixC2,Huorong,Server2025,False,L5,Operational Success
+T16-CS-SOPH-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T16-CS-KASP-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T16-CS-BITD-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T16-CS-MDAV-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,DefenderAV,Server2025,False,L3,Pre-command Prevention
+T16-CS-ELAS-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Elastic,Server2025,False,L1,Pre-execution Prevention
+T16-CS-HUOR-S25,T16,Module Stomping,Detection,Memory Concealment,CobaltStrike,Huorong,Server2025,False,L4,Command-stage Prevention
+T16-HV-SOPH-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T16-HV-KASP-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T16-HV-BITD-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T16-HV-MDAV-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,DefenderAV,Server2025,False,L5,Operational Success
+T16-HV-ELAS-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,Elastic,Server2025,False,L1,Pre-execution Prevention
+T16-HV-HUOR-S25,T16,Module Stomping,Detection,Memory Concealment,Havoc,Huorong,Server2025,False,L5,Operational Success
+T16-AX-SOPH-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Sophos,Server2025,False,L2,Pre-C2 Prevention
+T16-AX-KASP-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Kaspersky,Server2025,False,L2,Pre-C2 Prevention
+T16-AX-BITD-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Bitdefender,Server2025,False,L2,Pre-C2 Prevention
+T16-AX-MDAV-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,DefenderAV,Server2025,False,L5,Operational Success
+T16-AX-ELAS-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Elastic,Server2025,False,L1,Pre-execution Prevention
+T16-AX-HUOR-S25,T16,Module Stomping,Detection,Memory Concealment,AdaptixC2,Huorong,Server2025,False,L5,Operational Success

@@ -1,0 +1,46 @@
+EDR-EvadeBench — Licence
+========================
+
+Copyright (c) 2026 the EDR-EvadeBench authors. All rights reserved.
+
+The artifacts in this repository — the 22 evasion-technique sample
+implementations, the DET Matrix documentation, the evaluation-workflow
+documentation, and the accompanying README files — are made available
+for non-commercial scientific evaluation, consistent with the
+artifact-availability statement of the companion paper.
+
+1. Grant
+
+   Permission is granted to use, reproduce, and modify these artifacts
+   for non-commercial scientific research, academic teaching, and
+   defensive product evaluation, provided that this notice is retained
+   in all copies or substantial portions of the material and that any
+   publication of results derived from them cites the companion paper.
+
+2. Restrictions
+
+   Commercial use, redistribution for commercial advantage, and
+   incorporation into a product or service offered for a fee are not
+   permitted without prior written permission from the copyright
+   holders.
+
+   This licence does not grant any rights in third-party components.
+   Those remain governed by their own terms; see
+   THIRD_PARTY_NOTICES.md.
+
+3. No warranty
+
+   THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+   NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+   BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+   CONNECTION WITH THE MATERIAL OR THE USE OR OTHER DEALINGS IN THE
+   MATERIAL.
+
+4. Intended use
+
+   These artifacts are published strictly for academic, defensive, and
+   product-hardening research. They must be used only in isolated,
+   researcher-controlled environments. See SECURITY.md.

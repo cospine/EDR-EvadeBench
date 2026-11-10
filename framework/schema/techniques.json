@@ -1,0 +1,252 @@
+{
+  "version": "1.0.0",
+  "description": "Machine-readable form of Table 7 (validation criteria and required privileges), Table 1 (technique list), and Figure 2 (DET Matrix) of the companion paper. JSON is used rather than YAML so that the framework runs on a stock Python 3 with no third-party packages.",
+  "source": "EDR-EvadeBench companion paper, Table 1, Table 7, Figure 2",
+  "layer1_stages": [
+    "Collection",
+    "Transmission",
+    "Detection"
+  ],
+  "layer2_strategies": [
+    "EDR Sensor Disruption",
+    "EDR Agent Disruption",
+    "Telemetry Blocking",
+    "Memory Concealment",
+    "Obfuscation",
+    "Logic Bypass"
+  ],
+  "validation_configs": {
+    "clean-baseline": "Validated in a clean baseline environment without active EDR enforcement (paper Section 3-B).",
+    "product-present": "Validated with the corresponding endpoint-security product installed and the required target components active, because the technique manipulates EDR hooks, callbacks, agent resources, protected processes, or telemetry channels (paper Section 3-B)."
+  },
+  "techniques": [
+    {
+      "id": "T1",
+      "name": "Direct Syscall Invocation",
+      "layer1": "Collection",
+      "layer2": "EDR Sensor Disruption",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "System service executed; no calls to hooked user-mode API functions detected via inline breakpoint audit."
+    },
+    {
+      "id": "T2",
+      "name": "ETW & AMSI Patching",
+      "layer1": "Collection",
+      "layer2": "EDR Sensor Disruption",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Subsequent execution of a benign AMSI test string completes without triggering a scan event; ETW event tracing disabled for the process.",
+      "implementation_note": "The released source patches NtTraceEvent (overwritten with RET) and writes a single byte at a build-dependent offset (+0x83) into AmsiScanBuffer. Verify the target bytes on your own amsi.dll build."
+    },
+    {
+      "id": "T3",
+      "name": "DLL Signature Restriction",
+      "layer1": "Collection",
+      "layer2": "EDR Sensor Disruption",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Process signature policy enabled; non-Microsoft DLL injection blocked."
+    },
+    {
+      "id": "T4",
+      "name": "Hook Overwriting",
+      "layer1": "Collection",
+      "layer2": "EDR Sensor Disruption",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "product-present",
+      "evasion_logic_criterion": "Original EDR hook trampoline restored; subsequent API calls route to the system service without EDR interception.",
+      "implementation_note": "Opening an arbitrary foreign process with the access rights this sample requests may require elevation in practice, even though Table 7 lists Standard User as the minimum execution context."
+    },
+    {
+      "id": "T5",
+      "name": "NTDLL Hook Removal",
+      "layer1": "Collection",
+      "layer2": "EDR Sensor Disruption",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Fresh copy of NTDLL.dll mapped from disk; function prologues restored to original bytes; API calls bypass user-mode hooks."
+    },
+    {
+      "id": "T6",
+      "name": "Kernel Callback Removal",
+      "layer1": "Collection",
+      "layer2": "EDR Agent Disruption",
+      "privilege": "elevated-administrator",
+      "byovd": true,
+      "validation_config": "product-present",
+      "evasion_logic_criterion": "Targeted kernel callback routines removed from callback arrays; corresponding system events no longer trigger EDR notifications.",
+      "implementation_note": "The callback-removal logic lives in the opaque driver echo_driver.sys, which ships without source. The released user-mode code is a controller only. See BINARY_PROVENANCE.md."
+    },
+    {
+      "id": "T7",
+      "name": "Symlink-based EDR Corruption",
+      "layer1": "Collection",
+      "layer2": "EDR Agent Disruption",
+      "privilege": "elevated-administrator",
+      "byovd": false,
+      "validation_config": "product-present",
+      "evasion_logic_criterion": "Symbolic link redirected the Process Monitor boot-log output to the targeted security-product executable; the privileged boot-time write corrupted the executable, and the corresponding protection component failed to start."
+    },
+    {
+      "id": "T8",
+      "name": "EDR Process Termination",
+      "layer1": "Collection",
+      "layer2": "EDR Agent Disruption",
+      "privilege": "elevated-administrator",
+      "byovd": true,
+      "validation_config": "product-present",
+      "evasion_logic_criterion": "EDR protected process terminated via kernel-level handle acquisition; EDR process no longer present in the task list.",
+      "implementation_note": "The vulnerable driver kEvP64.bin ships as an opaque binary without source. See BINARY_PROVENANCE.md."
+    },
+    {
+      "id": "T9",
+      "name": "EDRSilencer",
+      "layer1": "Transmission",
+      "layer2": "Telemetry Blocking",
+      "privilege": "elevated-administrator",
+      "byovd": false,
+      "validation_config": "product-present",
+      "evasion_logic_criterion": "EDR telemetry channels blocked via WFP filters; test alert generation from the endpoint does not appear on the management server."
+    },
+    {
+      "id": "T10",
+      "name": "COM Hijacking",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Malicious COM object registered under a hijacked CLSID; payload executes when the target application instantiates the COM object."
+    },
+    {
+      "id": "T11",
+      "name": "DLL Hijacking",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Malicious DLL loaded by a legitimate application via search-order hijacking; DLL entry point executed; payload running in a trusted process context."
+    },
+    {
+      "id": "T12",
+      "name": "COM-based Process Injection",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Payload injected into the target process via a COM interface call chain; C2 beacon established from the target process."
+    },
+    {
+      "id": "T13",
+      "name": "Fiber-based Process Injection",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Fiber created and scheduled within the target process; payload execution transferred to the fiber context; C2 beacon established from the target process."
+    },
+    {
+      "id": "T14",
+      "name": "Thread Pool-based Injection (PoolParty)",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Work item submitted to the target process thread pool; payload executed via a worker-thread callback; C2 beacon established.",
+      "implementation_note": "Requires restoring Boost 1.82.0 from packages.config before the solution builds."
+    },
+    {
+      "id": "T15",
+      "name": "Process Hollowing",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Target process created in a suspended state; original image unmapped; payload written to process memory confirmed by byte-pattern scan."
+    },
+    {
+      "id": "T16",
+      "name": "Module Stomping",
+      "layer1": "Detection",
+      "layer2": "Memory Concealment",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Legitimate DLL module loaded; executable section overwritten with the payload; C2 beacon established with the module name appearing as a signed binary."
+    },
+    {
+      "id": "T17",
+      "name": "Code Packing (UPX)",
+      "layer1": "Detection",
+      "layer2": "Obfuscation",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Packed executable runs successfully; original payload executes in memory; C2 beacon established."
+    },
+    {
+      "id": "T18",
+      "name": "Code Virtualization (VMProtect)",
+      "layer1": "Detection",
+      "layer2": "Obfuscation",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Virtualized executable runs successfully; protected code sections execute without crashes; C2 beacon established.",
+      "implementation_note": "Requires commercial VMProtect, which is not redistributed."
+    },
+    {
+      "id": "T19",
+      "name": "Compiler-level Obfuscation (OLLVM)",
+      "layer1": "Detection",
+      "layer2": "Obfuscation",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Obfuscated executable runs successfully; payload executes despite control-flow obfuscation; C2 beacon established.",
+      "implementation_note": "Requires building the OLLVM 17 toolchain from source; no prebuilt compiler is redistributed."
+    },
+    {
+      "id": "T20",
+      "name": "PE Resource Masquerading",
+      "layer1": "Detection",
+      "layer2": "Obfuscation",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "PE icons and product/version metadata modified to resemble trusted software; executable runs successfully; C2 beacon established."
+    },
+    {
+      "id": "T21",
+      "name": "API-level Behavioral Obfuscation",
+      "layer1": "Detection",
+      "layer2": "Logic Bypass",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "Sequence of irrelevant API calls executed prior to malicious activity; C2 beacon established; behavioral trace contains a misleading call pattern.",
+      "implementation_note": "Not buildable from this repository alone: the libcurl source tree and headers are not vendored. See BUILD.md."
+    },
+    {
+      "id": "T22",
+      "name": "COM-based Process Creation",
+      "layer1": "Detection",
+      "layer2": "Logic Bypass",
+      "privilege": "standard-user",
+      "byovd": false,
+      "validation_config": "clean-baseline",
+      "evasion_logic_criterion": "New process created via a trusted COM interface; C2 beacon established from the child process spawned by a trusted parent process."
+    }
+  ]
+}

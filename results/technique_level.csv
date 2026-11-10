@@ -1,0 +1,23 @@
+technique_id,technique_name,layer1,layer2,n,L1,L2,L3,L4,L5,l5_rate
+T1,Direct Syscall Invocation,Collection,EDR Sensor Disruption,36,6,14,6,0,10,0.2778
+T2,ETW & AMSI Patching,Collection,EDR Sensor Disruption,36,6,14,6,0,10,0.2778
+T3,DLL Signature Restriction,Collection,EDR Sensor Disruption,36,6,14,6,5,5,0.1389
+T4,Hook Overwriting,Collection,EDR Sensor Disruption,36,6,19,1,2,8,0.2222
+T5,NTDLL Hook Removal,Collection,EDR Sensor Disruption,36,12,14,4,0,6,0.1667
+T6,Kernel Callback Removal,Collection,EDR Agent Disruption,36,12,18,0,0,6,0.1667
+T7,Symlink-based EDR Corruption,Collection,EDR Agent Disruption,36,0,0,12,0,24,0.6667
+T8,EDR Process Termination,Collection,EDR Agent Disruption,36,24,6,0,0,6,0.1667
+T9,EDRSilencer,Transmission,Telemetry Blocking,36,6,12,0,6,12,0.3333
+T10,COM Hijacking,Detection,Memory Concealment,36,4,20,4,0,8,0.2222
+T11,DLL Hijacking,Detection,Memory Concealment,36,4,16,3,0,13,0.3611
+T12,COM-based Process Injection,Detection,Memory Concealment,36,0,19,7,0,10,0.2778
+T13,Fiber-based Process Injection,Detection,Memory Concealment,36,12,6,10,0,8,0.2222
+T14,Thread Pool-based Injection (PoolParty),Detection,Memory Concealment,36,30,6,0,0,0,0.0
+T15,Process Hollowing,Detection,Memory Concealment,36,12,18,0,0,6,0.1667
+T16,Module Stomping,Detection,Memory Concealment,36,6,18,2,2,8,0.2222
+T17,Code Packing (UPX),Detection,Obfuscation,36,16,14,2,0,4,0.1111
+T18,Code Virtualization (VMProtect),Detection,Obfuscation,36,20,10,2,0,4,0.1111
+T19,Compiler-level Obfuscation (OLLVM),Detection,Obfuscation,36,12,15,3,0,6,0.1667
+T20,PE Resource Masquerading,Detection,Obfuscation,36,6,18,2,0,10,0.2778
+T21,API-level Behavioral Obfuscation,Detection,Logic Bypass,36,0,22,4,0,10,0.2778
+T22,COM-based Process Creation,Detection,Logic Bypass,36,12,12,4,0,8,0.2222

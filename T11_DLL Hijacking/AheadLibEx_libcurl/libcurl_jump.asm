@@ -1,0 +1,513 @@
+
+;
+; created by AheadLibEx
+; Author:i1tao
+; Blog:https://www.cnblogs.com/0xc5
+; Github:https://github.com/i1tao/AheadLibEx
+;
+;
+; 把 .asm 文件添加到工程
+; 右键单击文件-属性-常规
+; 项类型:自定义生成工具
+; 从生成中排除:否
+;
+; 然后复制下面命令填入
+; 命令行: ml64 /Fo $(IntDir)%(fileName).obj /c /Cp %(fileName).asm
+; 输出: $(IntDir)%(fileName).obj;%(Outputs)
+; 链接对象: 是
+;
+; Add the .asm file into your project.
+; Right click file -> Properties -> General
+; Item Type : Custom Build Tool
+; Excluded From Build : No
+;
+; In "Custom Build Tool" Properties
+; Command Line :ml64 /Fo $(IntDir)%(fileName).obj /c /Cp %(fileName).asm
+; Outputs:$(IntDir)%(fileName).obj;%(Outputs)
+; Link Objects:Yes
+
+.DATA
+EXTERN pfnAheadLibEx_curl_easy_cleanup:dq;
+EXTERN pfnAheadLibEx_curl_easy_duphandle:dq;
+EXTERN pfnAheadLibEx_curl_easy_escape:dq;
+EXTERN pfnAheadLibEx_curl_easy_getinfo:dq;
+EXTERN pfnAheadLibEx_curl_easy_header:dq;
+EXTERN pfnAheadLibEx_curl_easy_init:dq;
+EXTERN pfnAheadLibEx_curl_easy_nextheader:dq;
+EXTERN pfnAheadLibEx_curl_easy_option_by_id:dq;
+EXTERN pfnAheadLibEx_curl_easy_option_by_name:dq;
+EXTERN pfnAheadLibEx_curl_easy_option_next:dq;
+EXTERN pfnAheadLibEx_curl_easy_pause:dq;
+EXTERN pfnAheadLibEx_curl_easy_perform:dq;
+EXTERN pfnAheadLibEx_curl_easy_recv:dq;
+EXTERN pfnAheadLibEx_curl_easy_reset:dq;
+EXTERN pfnAheadLibEx_curl_easy_send:dq;
+EXTERN pfnAheadLibEx_curl_easy_setopt:dq;
+EXTERN pfnAheadLibEx_curl_easy_ssls_export:dq;
+EXTERN pfnAheadLibEx_curl_easy_ssls_import:dq;
+EXTERN pfnAheadLibEx_curl_easy_strerror:dq;
+EXTERN pfnAheadLibEx_curl_easy_unescape:dq;
+EXTERN pfnAheadLibEx_curl_easy_upkeep:dq;
+EXTERN pfnAheadLibEx_curl_escape:dq;
+EXTERN pfnAheadLibEx_curl_formadd:dq;
+EXTERN pfnAheadLibEx_curl_formfree:dq;
+EXTERN pfnAheadLibEx_curl_formget:dq;
+EXTERN pfnAheadLibEx_curl_free:dq;
+EXTERN pfnAheadLibEx_curl_getdate:dq;
+EXTERN pfnAheadLibEx_curl_getenv:dq;
+EXTERN pfnAheadLibEx_curl_global_cleanup:dq;
+EXTERN pfnAheadLibEx_curl_global_init:dq;
+EXTERN pfnAheadLibEx_curl_global_init_mem:dq;
+EXTERN pfnAheadLibEx_curl_global_sslset:dq;
+EXTERN pfnAheadLibEx_curl_global_trace:dq;
+EXTERN pfnAheadLibEx_curl_maprintf:dq;
+EXTERN pfnAheadLibEx_curl_mfprintf:dq;
+EXTERN pfnAheadLibEx_curl_mime_addpart:dq;
+EXTERN pfnAheadLibEx_curl_mime_data:dq;
+EXTERN pfnAheadLibEx_curl_mime_data_cb:dq;
+EXTERN pfnAheadLibEx_curl_mime_encoder:dq;
+EXTERN pfnAheadLibEx_curl_mime_filedata:dq;
+EXTERN pfnAheadLibEx_curl_mime_filename:dq;
+EXTERN pfnAheadLibEx_curl_mime_free:dq;
+EXTERN pfnAheadLibEx_curl_mime_headers:dq;
+EXTERN pfnAheadLibEx_curl_mime_init:dq;
+EXTERN pfnAheadLibEx_curl_mime_name:dq;
+EXTERN pfnAheadLibEx_curl_mime_subparts:dq;
+EXTERN pfnAheadLibEx_curl_mime_type:dq;
+EXTERN pfnAheadLibEx_curl_mprintf:dq;
+EXTERN pfnAheadLibEx_curl_msnprintf:dq;
+EXTERN pfnAheadLibEx_curl_msprintf:dq;
+EXTERN pfnAheadLibEx_curl_multi_add_handle:dq;
+EXTERN pfnAheadLibEx_curl_multi_assign:dq;
+EXTERN pfnAheadLibEx_curl_multi_cleanup:dq;
+EXTERN pfnAheadLibEx_curl_multi_fdset:dq;
+EXTERN pfnAheadLibEx_curl_multi_get_handles:dq;
+EXTERN pfnAheadLibEx_curl_multi_info_read:dq;
+EXTERN pfnAheadLibEx_curl_multi_init:dq;
+EXTERN pfnAheadLibEx_curl_multi_perform:dq;
+EXTERN pfnAheadLibEx_curl_multi_poll:dq;
+EXTERN pfnAheadLibEx_curl_multi_remove_handle:dq;
+EXTERN pfnAheadLibEx_curl_multi_setopt:dq;
+EXTERN pfnAheadLibEx_curl_multi_socket:dq;
+EXTERN pfnAheadLibEx_curl_multi_socket_action:dq;
+EXTERN pfnAheadLibEx_curl_multi_socket_all:dq;
+EXTERN pfnAheadLibEx_curl_multi_strerror:dq;
+EXTERN pfnAheadLibEx_curl_multi_timeout:dq;
+EXTERN pfnAheadLibEx_curl_multi_wait:dq;
+EXTERN pfnAheadLibEx_curl_multi_waitfds:dq;
+EXTERN pfnAheadLibEx_curl_multi_wakeup:dq;
+EXTERN pfnAheadLibEx_curl_mvaprintf:dq;
+EXTERN pfnAheadLibEx_curl_mvfprintf:dq;
+EXTERN pfnAheadLibEx_curl_mvprintf:dq;
+EXTERN pfnAheadLibEx_curl_mvsnprintf:dq;
+EXTERN pfnAheadLibEx_curl_mvsprintf:dq;
+EXTERN pfnAheadLibEx_curl_pushheader_byname:dq;
+EXTERN pfnAheadLibEx_curl_pushheader_bynum:dq;
+EXTERN pfnAheadLibEx_curl_share_cleanup:dq;
+EXTERN pfnAheadLibEx_curl_share_init:dq;
+EXTERN pfnAheadLibEx_curl_share_setopt:dq;
+EXTERN pfnAheadLibEx_curl_share_strerror:dq;
+EXTERN pfnAheadLibEx_curl_slist_append:dq;
+EXTERN pfnAheadLibEx_curl_slist_free_all:dq;
+EXTERN pfnAheadLibEx_curl_strequal:dq;
+EXTERN pfnAheadLibEx_curl_strnequal:dq;
+EXTERN pfnAheadLibEx_curl_unescape:dq;
+EXTERN pfnAheadLibEx_curl_url:dq;
+EXTERN pfnAheadLibEx_curl_url_cleanup:dq;
+EXTERN pfnAheadLibEx_curl_url_dup:dq;
+EXTERN pfnAheadLibEx_curl_url_get:dq;
+EXTERN pfnAheadLibEx_curl_url_set:dq;
+EXTERN pfnAheadLibEx_curl_url_strerror:dq;
+EXTERN pfnAheadLibEx_curl_version:dq;
+EXTERN pfnAheadLibEx_curl_version_info:dq;
+EXTERN pfnAheadLibEx_curl_ws_meta:dq;
+EXTERN pfnAheadLibEx_curl_ws_recv:dq;
+EXTERN pfnAheadLibEx_curl_ws_send:dq;
+
+.CODE
+AheadLibEx_curl_easy_cleanup PROC
+	jmp pfnAheadLibEx_curl_easy_cleanup
+AheadLibEx_curl_easy_cleanup ENDP
+
+AheadLibEx_curl_easy_duphandle PROC
+	jmp pfnAheadLibEx_curl_easy_duphandle
+AheadLibEx_curl_easy_duphandle ENDP
+
+AheadLibEx_curl_easy_escape PROC
+	jmp pfnAheadLibEx_curl_easy_escape
+AheadLibEx_curl_easy_escape ENDP
+
+AheadLibEx_curl_easy_getinfo PROC
+	jmp pfnAheadLibEx_curl_easy_getinfo
+AheadLibEx_curl_easy_getinfo ENDP
+
+AheadLibEx_curl_easy_header PROC
+	jmp pfnAheadLibEx_curl_easy_header
+AheadLibEx_curl_easy_header ENDP
+
+AheadLibEx_curl_easy_init PROC
+	jmp pfnAheadLibEx_curl_easy_init
+AheadLibEx_curl_easy_init ENDP
+
+AheadLibEx_curl_easy_nextheader PROC
+	jmp pfnAheadLibEx_curl_easy_nextheader
+AheadLibEx_curl_easy_nextheader ENDP
+
+AheadLibEx_curl_easy_option_by_id PROC
+	jmp pfnAheadLibEx_curl_easy_option_by_id
+AheadLibEx_curl_easy_option_by_id ENDP
+
+AheadLibEx_curl_easy_option_by_name PROC
+	jmp pfnAheadLibEx_curl_easy_option_by_name
+AheadLibEx_curl_easy_option_by_name ENDP
+
+AheadLibEx_curl_easy_option_next PROC
+	jmp pfnAheadLibEx_curl_easy_option_next
+AheadLibEx_curl_easy_option_next ENDP
+
+AheadLibEx_curl_easy_pause PROC
+	jmp pfnAheadLibEx_curl_easy_pause
+AheadLibEx_curl_easy_pause ENDP
+
+AheadLibEx_curl_easy_perform PROC
+	jmp pfnAheadLibEx_curl_easy_perform
+AheadLibEx_curl_easy_perform ENDP
+
+AheadLibEx_curl_easy_recv PROC
+	jmp pfnAheadLibEx_curl_easy_recv
+AheadLibEx_curl_easy_recv ENDP
+
+AheadLibEx_curl_easy_reset PROC
+	jmp pfnAheadLibEx_curl_easy_reset
+AheadLibEx_curl_easy_reset ENDP
+
+AheadLibEx_curl_easy_send PROC
+	jmp pfnAheadLibEx_curl_easy_send
+AheadLibEx_curl_easy_send ENDP
+
+AheadLibEx_curl_easy_setopt PROC
+	jmp pfnAheadLibEx_curl_easy_setopt
+AheadLibEx_curl_easy_setopt ENDP
+
+AheadLibEx_curl_easy_ssls_export PROC
+	jmp pfnAheadLibEx_curl_easy_ssls_export
+AheadLibEx_curl_easy_ssls_export ENDP
+
+AheadLibEx_curl_easy_ssls_import PROC
+	jmp pfnAheadLibEx_curl_easy_ssls_import
+AheadLibEx_curl_easy_ssls_import ENDP
+
+AheadLibEx_curl_easy_strerror PROC
+	jmp pfnAheadLibEx_curl_easy_strerror
+AheadLibEx_curl_easy_strerror ENDP
+
+AheadLibEx_curl_easy_unescape PROC
+	jmp pfnAheadLibEx_curl_easy_unescape
+AheadLibEx_curl_easy_unescape ENDP
+
+AheadLibEx_curl_easy_upkeep PROC
+	jmp pfnAheadLibEx_curl_easy_upkeep
+AheadLibEx_curl_easy_upkeep ENDP
+
+AheadLibEx_curl_escape PROC
+	jmp pfnAheadLibEx_curl_escape
+AheadLibEx_curl_escape ENDP
+
+AheadLibEx_curl_formadd PROC
+	jmp pfnAheadLibEx_curl_formadd
+AheadLibEx_curl_formadd ENDP
+
+AheadLibEx_curl_formfree PROC
+	jmp pfnAheadLibEx_curl_formfree
+AheadLibEx_curl_formfree ENDP
+
+AheadLibEx_curl_formget PROC
+	jmp pfnAheadLibEx_curl_formget
+AheadLibEx_curl_formget ENDP
+
+AheadLibEx_curl_free PROC
+	jmp pfnAheadLibEx_curl_free
+AheadLibEx_curl_free ENDP
+
+AheadLibEx_curl_getdate PROC
+	jmp pfnAheadLibEx_curl_getdate
+AheadLibEx_curl_getdate ENDP
+
+AheadLibEx_curl_getenv PROC
+	jmp pfnAheadLibEx_curl_getenv
+AheadLibEx_curl_getenv ENDP
+
+AheadLibEx_curl_global_cleanup PROC
+	jmp pfnAheadLibEx_curl_global_cleanup
+AheadLibEx_curl_global_cleanup ENDP
+
+AheadLibEx_curl_global_init PROC
+	jmp pfnAheadLibEx_curl_global_init
+AheadLibEx_curl_global_init ENDP
+
+AheadLibEx_curl_global_init_mem PROC
+	jmp pfnAheadLibEx_curl_global_init_mem
+AheadLibEx_curl_global_init_mem ENDP
+
+AheadLibEx_curl_global_sslset PROC
+	jmp pfnAheadLibEx_curl_global_sslset
+AheadLibEx_curl_global_sslset ENDP
+
+AheadLibEx_curl_global_trace PROC
+	jmp pfnAheadLibEx_curl_global_trace
+AheadLibEx_curl_global_trace ENDP
+
+AheadLibEx_curl_maprintf PROC
+	jmp pfnAheadLibEx_curl_maprintf
+AheadLibEx_curl_maprintf ENDP
+
+AheadLibEx_curl_mfprintf PROC
+	jmp pfnAheadLibEx_curl_mfprintf
+AheadLibEx_curl_mfprintf ENDP
+
+AheadLibEx_curl_mime_addpart PROC
+	jmp pfnAheadLibEx_curl_mime_addpart
+AheadLibEx_curl_mime_addpart ENDP
+
+AheadLibEx_curl_mime_data PROC
+	jmp pfnAheadLibEx_curl_mime_data
+AheadLibEx_curl_mime_data ENDP
+
+AheadLibEx_curl_mime_data_cb PROC
+	jmp pfnAheadLibEx_curl_mime_data_cb
+AheadLibEx_curl_mime_data_cb ENDP
+
+AheadLibEx_curl_mime_encoder PROC
+	jmp pfnAheadLibEx_curl_mime_encoder
+AheadLibEx_curl_mime_encoder ENDP
+
+AheadLibEx_curl_mime_filedata PROC
+	jmp pfnAheadLibEx_curl_mime_filedata
+AheadLibEx_curl_mime_filedata ENDP
+
+AheadLibEx_curl_mime_filename PROC
+	jmp pfnAheadLibEx_curl_mime_filename
+AheadLibEx_curl_mime_filename ENDP
+
+AheadLibEx_curl_mime_free PROC
+	jmp pfnAheadLibEx_curl_mime_free
+AheadLibEx_curl_mime_free ENDP
+
+AheadLibEx_curl_mime_headers PROC
+	jmp pfnAheadLibEx_curl_mime_headers
+AheadLibEx_curl_mime_headers ENDP
+
+AheadLibEx_curl_mime_init PROC
+	jmp pfnAheadLibEx_curl_mime_init
+AheadLibEx_curl_mime_init ENDP
+
+AheadLibEx_curl_mime_name PROC
+	jmp pfnAheadLibEx_curl_mime_name
+AheadLibEx_curl_mime_name ENDP
+
+AheadLibEx_curl_mime_subparts PROC
+	jmp pfnAheadLibEx_curl_mime_subparts
+AheadLibEx_curl_mime_subparts ENDP
+
+AheadLibEx_curl_mime_type PROC
+	jmp pfnAheadLibEx_curl_mime_type
+AheadLibEx_curl_mime_type ENDP
+
+AheadLibEx_curl_mprintf PROC
+	jmp pfnAheadLibEx_curl_mprintf
+AheadLibEx_curl_mprintf ENDP
+
+AheadLibEx_curl_msnprintf PROC
+	jmp pfnAheadLibEx_curl_msnprintf
+AheadLibEx_curl_msnprintf ENDP
+
+AheadLibEx_curl_msprintf PROC
+	jmp pfnAheadLibEx_curl_msprintf
+AheadLibEx_curl_msprintf ENDP
+
+AheadLibEx_curl_multi_add_handle PROC
+	jmp pfnAheadLibEx_curl_multi_add_handle
+AheadLibEx_curl_multi_add_handle ENDP
+
+AheadLibEx_curl_multi_assign PROC
+	jmp pfnAheadLibEx_curl_multi_assign
+AheadLibEx_curl_multi_assign ENDP
+
+AheadLibEx_curl_multi_cleanup PROC
+	jmp pfnAheadLibEx_curl_multi_cleanup
+AheadLibEx_curl_multi_cleanup ENDP
+
+AheadLibEx_curl_multi_fdset PROC
+	jmp pfnAheadLibEx_curl_multi_fdset
+AheadLibEx_curl_multi_fdset ENDP
+
+AheadLibEx_curl_multi_get_handles PROC
+	jmp pfnAheadLibEx_curl_multi_get_handles
+AheadLibEx_curl_multi_get_handles ENDP
+
+AheadLibEx_curl_multi_info_read PROC
+	jmp pfnAheadLibEx_curl_multi_info_read
+AheadLibEx_curl_multi_info_read ENDP
+
+AheadLibEx_curl_multi_init PROC
+	jmp pfnAheadLibEx_curl_multi_init
+AheadLibEx_curl_multi_init ENDP
+
+AheadLibEx_curl_multi_perform PROC
+	jmp pfnAheadLibEx_curl_multi_perform
+AheadLibEx_curl_multi_perform ENDP
+
+AheadLibEx_curl_multi_poll PROC
+	jmp pfnAheadLibEx_curl_multi_poll
+AheadLibEx_curl_multi_poll ENDP
+
+AheadLibEx_curl_multi_remove_handle PROC
+	jmp pfnAheadLibEx_curl_multi_remove_handle
+AheadLibEx_curl_multi_remove_handle ENDP
+
+AheadLibEx_curl_multi_setopt PROC
+	jmp pfnAheadLibEx_curl_multi_setopt
+AheadLibEx_curl_multi_setopt ENDP
+
+AheadLibEx_curl_multi_socket PROC
+	jmp pfnAheadLibEx_curl_multi_socket
+AheadLibEx_curl_multi_socket ENDP
+
+AheadLibEx_curl_multi_socket_action PROC
+	jmp pfnAheadLibEx_curl_multi_socket_action
+AheadLibEx_curl_multi_socket_action ENDP
+
+AheadLibEx_curl_multi_socket_all PROC
+	jmp pfnAheadLibEx_curl_multi_socket_all
+AheadLibEx_curl_multi_socket_all ENDP
+
+AheadLibEx_curl_multi_strerror PROC
+	jmp pfnAheadLibEx_curl_multi_strerror
+AheadLibEx_curl_multi_strerror ENDP
+
+AheadLibEx_curl_multi_timeout PROC
+	jmp pfnAheadLibEx_curl_multi_timeout
+AheadLibEx_curl_multi_timeout ENDP
+
+AheadLibEx_curl_multi_wait PROC
+	jmp pfnAheadLibEx_curl_multi_wait
+AheadLibEx_curl_multi_wait ENDP
+
+AheadLibEx_curl_multi_waitfds PROC
+	jmp pfnAheadLibEx_curl_multi_waitfds
+AheadLibEx_curl_multi_waitfds ENDP
+
+AheadLibEx_curl_multi_wakeup PROC
+	jmp pfnAheadLibEx_curl_multi_wakeup
+AheadLibEx_curl_multi_wakeup ENDP
+
+AheadLibEx_curl_mvaprintf PROC
+	jmp pfnAheadLibEx_curl_mvaprintf
+AheadLibEx_curl_mvaprintf ENDP
+
+AheadLibEx_curl_mvfprintf PROC
+	jmp pfnAheadLibEx_curl_mvfprintf
+AheadLibEx_curl_mvfprintf ENDP
+
+AheadLibEx_curl_mvprintf PROC
+	jmp pfnAheadLibEx_curl_mvprintf
+AheadLibEx_curl_mvprintf ENDP
+
+AheadLibEx_curl_mvsnprintf PROC
+	jmp pfnAheadLibEx_curl_mvsnprintf
+AheadLibEx_curl_mvsnprintf ENDP
+
+AheadLibEx_curl_mvsprintf PROC
+	jmp pfnAheadLibEx_curl_mvsprintf
+AheadLibEx_curl_mvsprintf ENDP
+
+AheadLibEx_curl_pushheader_byname PROC
+	jmp pfnAheadLibEx_curl_pushheader_byname
+AheadLibEx_curl_pushheader_byname ENDP
+
+AheadLibEx_curl_pushheader_bynum PROC
+	jmp pfnAheadLibEx_curl_pushheader_bynum
+AheadLibEx_curl_pushheader_bynum ENDP
+
+AheadLibEx_curl_share_cleanup PROC
+	jmp pfnAheadLibEx_curl_share_cleanup
+AheadLibEx_curl_share_cleanup ENDP
+
+AheadLibEx_curl_share_init PROC
+	jmp pfnAheadLibEx_curl_share_init
+AheadLibEx_curl_share_init ENDP
+
+AheadLibEx_curl_share_setopt PROC
+	jmp pfnAheadLibEx_curl_share_setopt
+AheadLibEx_curl_share_setopt ENDP
+
+AheadLibEx_curl_share_strerror PROC
+	jmp pfnAheadLibEx_curl_share_strerror
+AheadLibEx_curl_share_strerror ENDP
+
+AheadLibEx_curl_slist_append PROC
+	jmp pfnAheadLibEx_curl_slist_append
+AheadLibEx_curl_slist_append ENDP
+
+AheadLibEx_curl_slist_free_all PROC
+	jmp pfnAheadLibEx_curl_slist_free_all
+AheadLibEx_curl_slist_free_all ENDP
+
+AheadLibEx_curl_strequal PROC
+	jmp pfnAheadLibEx_curl_strequal
+AheadLibEx_curl_strequal ENDP
+
+AheadLibEx_curl_strnequal PROC
+	jmp pfnAheadLibEx_curl_strnequal
+AheadLibEx_curl_strnequal ENDP
+
+AheadLibEx_curl_unescape PROC
+	jmp pfnAheadLibEx_curl_unescape
+AheadLibEx_curl_unescape ENDP
+
+AheadLibEx_curl_url PROC
+	jmp pfnAheadLibEx_curl_url
+AheadLibEx_curl_url ENDP
+
+AheadLibEx_curl_url_cleanup PROC
+	jmp pfnAheadLibEx_curl_url_cleanup
+AheadLibEx_curl_url_cleanup ENDP
+
+AheadLibEx_curl_url_dup PROC
+	jmp pfnAheadLibEx_curl_url_dup
+AheadLibEx_curl_url_dup ENDP
+
+AheadLibEx_curl_url_get PROC
+	jmp pfnAheadLibEx_curl_url_get
+AheadLibEx_curl_url_get ENDP
+
+AheadLibEx_curl_url_set PROC
+	jmp pfnAheadLibEx_curl_url_set
+AheadLibEx_curl_url_set ENDP
+
+AheadLibEx_curl_url_strerror PROC
+	jmp pfnAheadLibEx_curl_url_strerror
+AheadLibEx_curl_url_strerror ENDP
+
+AheadLibEx_curl_version PROC
+	jmp pfnAheadLibEx_curl_version
+AheadLibEx_curl_version ENDP
+
+AheadLibEx_curl_version_info PROC
+	jmp pfnAheadLibEx_curl_version_info
+AheadLibEx_curl_version_info ENDP
+
+AheadLibEx_curl_ws_meta PROC
+	jmp pfnAheadLibEx_curl_ws_meta
+AheadLibEx_curl_ws_meta ENDP
+
+AheadLibEx_curl_ws_recv PROC
+	jmp pfnAheadLibEx_curl_ws_recv
+AheadLibEx_curl_ws_recv ENDP
+
+AheadLibEx_curl_ws_send PROC
+	jmp pfnAheadLibEx_curl_ws_send
+AheadLibEx_curl_ws_send ENDP
+
+
+END

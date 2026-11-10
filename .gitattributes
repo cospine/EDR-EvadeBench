@@ -1,0 +1,2 @@
+# Preserve the released dataset fingerprint on every platform and in archives.
+results/outcomes_scored.csv text eol=lf

@@ -1,0 +1,167 @@
+{
+  "version": "1.1.0",
+  "description": "Machine-readable form of Table 8 (detailed experimental testbed configuration) and the evaluation design constants stated in Section 3 of the companion paper. JSON is used so that the framework needs no third-party packages.",
+  "source": "EDR-EvadeBench companion paper, Table 8 and Section 3",
+  "payload_families": [
+    {
+      "id": "CobaltStrike",
+      "short": "CS",
+      "framework": "Cobalt Strike",
+      "note": "widely used commercial framework with extensive public signature coverage",
+      "version": "4.8"
+    },
+    {
+      "id": "Havoc",
+      "short": "HV",
+      "framework": "Havoc",
+      "note": "modern open-source framework with an evolving detection landscape",
+      "version": "0.7"
+    },
+    {
+      "id": "AdaptixC2",
+      "short": "AX",
+      "framework": "AdaptixC2",
+      "note": "lightweight, less prevalent framework; tests generalisation beyond well-known tools",
+      "version": "1.2"
+    }
+  ],
+  "environments": [
+    {
+      "id": "Win11Enterprise",
+      "short": "W11",
+      "os": "Microsoft Windows 11 Enterprise Evaluation",
+      "version": "10.0.26200",
+      "build": "26200"
+    },
+    {
+      "id": "Server2025",
+      "short": "S25",
+      "os": "Microsoft Windows Server 2025 Standard Evaluation",
+      "version": "10.0.26100",
+      "build": "26100"
+    }
+  ],
+  "products": [
+    {
+      "id": "Sophos",
+      "short": "SOPH",
+      "name": "Sophos Endpoint Detection and Response",
+      "type": "Commercial",
+      "version": "2026.2.1.3.0",
+      "content": "Last signature update 2026/07/19 17:07"
+    },
+    {
+      "id": "Kaspersky",
+      "short": "KASP",
+      "name": "Kaspersky Endpoint Security",
+      "type": "Commercial",
+      "version": "14.0.0.504",
+      "content": "Database released 2026/04/14"
+    },
+    {
+      "id": "Bitdefender",
+      "short": "BITD",
+      "name": "Bitdefender Endpoint Security Tools",
+      "type": "Commercial",
+      "version": "8.26.7.647",
+      "content": "Security content version 7.101269 (release 2026/07/28)"
+    },
+    {
+      "id": "Elastic",
+      "short": "ELAS",
+      "name": "Elastic Security",
+      "type": "Open-source",
+      "version": "9.4.3",
+      "content": "Rule set 1.0.1969+2026-07-16-daily"
+    },
+    {
+      "id": "Huorong",
+      "short": "HUOR",
+      "name": "Huorong Endpoint Security",
+      "type": "Commercial",
+      "version": "V2.0.19.6",
+      "content": "EDR edition, centrally managed"
+    },
+    {
+      "id": "DefenderAV",
+      "short": "MDAV",
+      "name": "Microsoft Defender Antivirus (built-in baseline)",
+      "type": "Built-in",
+      "version": "4.18.26070.9",
+      "content": "AM Engine 1.1.26070.7; Signature 1.457.11.0 (updated 2026/08/05)"
+    }
+  ],
+  "hardware": {
+    "host_cpu": "13th Gen Intel(R) Core(TM) i7-13700, base frequency 3.40 GHz, 16 cores / 24 threads",
+    "host_ram": "32.0 GB DDR5 4800 MT/s; two Windows virtual machines allocated 8 GB memory each",
+    "vm_storage": "Each virtual machine equipped with an 80 GB NVMe virtual disk",
+    "hypervisor": "VMware Workstation 17 Pro (Build 17.6.1-24319023, personal use license)"
+  },
+  "network": {
+    "adapter": "Intel(R) 82574L Gigabit Network Connection, DHCP enabled",
+    "domain_membership": "WORKGROUP (standalone, not domain-joined)",
+    "proxy": "No proxy configured",
+    "c2": "Ubuntu C2 server using an RFC 1918 private address within the isolated virtual network; no public-facing listener or domain name",
+    "automatic_sample_submission": "Disabled for all evaluated products throughout the evaluation",
+    "address_policy": "Machine roles only; original guest, gateway and DNS addresses are not publicly distributed."
+  },
+  "outcome_model": {
+    "levels": [
+      {
+        "id": "L1",
+        "name": "Pre-execution Prevention",
+        "definition": "The product blocks the sample before any process is created."
+      },
+      {
+        "id": "L2",
+        "name": "Pre-C2 Prevention",
+        "definition": "The process runs, but the product terminates it before a C2 connection is established within the timeout period."
+      },
+      {
+        "id": "L3",
+        "name": "Pre-command Prevention",
+        "definition": "The C2 connection is established, but the product terminates the session before any command is sent."
+      },
+      {
+        "id": "L4",
+        "name": "Command-stage Prevention",
+        "definition": "Commands are sent, but they do not complete successfully, or the session is terminated within the timeout period."
+      },
+      {
+        "id": "L5",
+        "name": "Operational Success",
+        "definition": "All commands execute successfully and the session remains alive throughout the timeout period."
+      }
+    ],
+    "evidence_sources": [
+      "endpoint process and network state",
+      "C2 server logs",
+      "product alerts or local protection logs"
+    ],
+    "note": "Each level is mutually exclusive. Outcomes are determined by correlating the three evidence sources."
+  },
+  "protocol": {
+    "beacon_window_seconds": 60,
+    "pre_command_observation_seconds": 300,
+    "post_command_observation_seconds": 300,
+    "test_commands": [
+      "whoami",
+      "ipconfig",
+      "tasklist",
+      "upload"
+    ],
+    "payload_protection": "Same AES-based encryption and runtime decryption procedure for T0 and T1-T22.",
+    "repetition_rule": "Each case is repeated until five consecutive executions yield the same outcome; that outcome is recorded as the final result.",
+    "max_runs_observed": 8,
+    "snapshot_policy": "Both the target VM and the Ubuntu C2 server are reverted to clean snapshots before every execution; both VMs are fully powered off after each test.",
+    "retained_logs": "Original screenshots and full logs are retained internally because they contain sensitive environment information. The public results contain one final label per case and do not include complete historical per-execution traces.",
+    "source_payload_buffer_format": "AES-based encryption with runtime decryption; payload buffer format is [16-byte IV] + AES-256-CBC ciphertext",
+    "product_configuration": "Default product protection configurations; automatic sample submission disabled.",
+    "implementation_version": "First adapted implementation version used throughout the reported evaluation; no code revisions during evaluation."
+  },
+  "baseline": {
+    "description": "Payloads from Cobalt Strike, Havoc and AdaptixC2 with the same AES-based encryption and runtime decryption as T1-T22, but no additional evasion mechanism.",
+    "outcomes": 36,
+    "result": "All 36 baseline outcomes (six products x three payload families x two environments) were classified as L1 (Pre-execution Prevention)."
+  }
+}
